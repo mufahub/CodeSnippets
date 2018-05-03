@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>newbtn</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>AttributeButton *&lt;#btn#&gt; = [AttributeButton buttonWithImageName:@"&lt;#中国工商银行#&gt;" bgColor:[UIColor clearColor] title:@"&lt;#中国工商银行#&gt;" titleColor:[UIColor colorWithHex:&lt;#中国工商银行#&gt;] fontSize:&lt;#中国工商银行#&gt;];</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>CD12FFA6-52A8-4D42-8826-7B872048E066</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>newbtn</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>newbtn</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>wangluojiazai</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string> NSDictionary *params = @{
+                          @"&lt;#phone#&gt;":&lt;#self.phoneTf.text#&gt;,//&lt;#手机号#&gt;
+                          @"&lt;#validatecode#&gt;":&lt;#@"1234"#&gt;,//&lt;#验证码#&gt;
+                             };
+__weak typeof(self) weakSelf = self;
+
+[[LoadingView shareInstance]showLoadingViewAbove:self.view];
+[[NetWorkManager shareTool] method:HTTPMethodPOST urlString:&lt;#Register_URL#&gt; parameter:params completion:^(id respondObject, NSError *error) {
+    [[LoadingView shareInstance]hidenLoadingViewFrom:self.view];
+        if (error != nil) {
+            NSLog(@"请求错误%@",error);
+            [weakSelf performSelector:@selector(hidenAlertText) withObject:nil afterDelay:0.5];
+            return ;
+        }
+        NSDictionary *dict = [NSJSONSerialization JSONObjectWithData:respondObject options:NSJSONReadingMutableLeaves error:nil];
+        
+        if ([dict[@"code"] integerValue] == 10000) {
+            
+        } else {
+            MyAlertView(dict[@"message"]);
+        }
+        NSLog(@"%@",dict);
+    }];</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>A32CA619-25CA-401E-BE98-49DCBDF30EB3</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>wangluojiazai</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>wangluojiazai</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

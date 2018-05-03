@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>tongji</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    //页面统计
+    [MobClick beginLogPageView:@"&lt;#钱包#&gt;"];
+}
+
+- (void)viewWillDisappear:(BOOL)animated {
+    [super viewWillDisappear:animated];
+    //页面统计
+    [MobClick endLogPageView:@"&lt;#钱包#&gt;"];
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>71E31150-9C8E-40C0-BF86-1E16171A6C89</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>tongji</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>tongji</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>
